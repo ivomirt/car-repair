@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d0cc2a7c01.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" media="screen" href="./css/main.css" />
+
+    <title>T-Garage</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header">
+      <div class="container">
+        <nav id="navbar">
+          <div class="navbar-container">
+            <div class="logo">
+              <h2><span class="text-eff">T</span>GARAGE</h2>
+            </div>
+            <div class="nav-item"><a href="#">Home</a></div>
+            <div class="nav-item"><a href="#">About</a></div>
+            <div class="nav-item"><a href="#">Services</a></div>
+            <div class="nav-item"><a href="#">Accessories</a></div>
+            <div class="nav-item"><a href="#">Cars</a></div>
+            <div class="nav-item"><a href="#">Pages</a></div>
+          </div>
+        </nav>
+        <section id="showcase">
+          <div class="showcase-container">
+            <div class="showcase-item"><h2>AUTO REPAIR</h2></div>
+            <div class="showcase-item">
+              <h1>SERVICES</h1>
+            </div>
+            <div class="showcase-item">
+              <p class="p-text">
+                We'll take care of all your auto repair needs: brakes,tires, oil
+                changes and everything in between
+              </p>
+            </div>
+            <div class="showcase-item">
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+    <!-- FORM -->
+    <section id="form-section">
+      <div><h1>Let us check your vehicle</h1></div>
+      <div class="container">
+        <form id="form" action="#" novalidate>
+          <div class="form-container">
+            <div class="form-item">
+              <div class="inner-form-item">
+                <label for="Name">First Name</label>
+              </div>
+              <div class="inner-form-item">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  placeholder="Enter your first name..."
+                />
+                <small class="error" id="error"></small>
+              </div>
+              <div class="inner-form-item">
+                <label for="Name">Last Name</label>
+              </div>
+              <div class="inner-form-item">
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  placeholder="Enter your last name..."
+                />
+                <small class="error" id="error"></small>
+              </div>
+              <div class="inner-form-item">
+                <label for="email">E-mail</label>
+              </div>
+              <div class="inner-form-item">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your e-mail"
+                />
+                <small class="error" id="error"></small>
+              </div>
+            </div>
+            <div class="form-item">
+              <div class="inner-form-item">
+                <label for="Model">Model</label>
+              </div>
+              <div class="inner-form-item">
+                <input
+                  type="text"
+                  name="model"
+                  id="model"
+                  placeholder="Vehicle model..."
+                />
+                <small class="error" id="error"></small>
+              </div>
+              <div class="inner-form-item"><label for="year">Year</label></div>
+              <div class="inner-form-item">
+                <input
+                  type="number"
+                  name="year"
+                  id="year"
+                  placeholder="Vehicle year..."
+                />
+                <small class="error" id="error"></small>
+              </div>
+            </div>
+            <div class="form-item">
+              <div class="inner-form-item"><label for="date">Date</label></div>
+              <div class="inner-form-item">
+                <input
+                  type="date"
+                  name="date"
+                  id="date"
+                  placeholder="Choose a date..."
+                />
+                <small class="error" id="error"></small>
+              </div>
+              <div class="inner-form-item"><label for="time">Time</label></div>
+              <div class="inner-form-item">
+                <input
+                  type="text"
+                  name="time"
+                  id="time"
+                  placeholder="Choose time..."
+                />
+                <small class="error" id="error"></small>
+                <p>You can visit us every day from 9 to 17 o'clock</p>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-item"><h3>Follow us on</h3></div>
+          <div class="footer-item">
+            <div class="social">
+              <a href="twitter.com"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+            <div class="social">
+              <a href="youtube.com"><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+            <div class="social">
+              <a href="facebook.com"> <i class="fab fa-facebook fa-2x"></i></a>
+            </div>
+          </div>
+          <div class="footer-item">
+            <div><a href="#">Privacy Policy</a></div>
+            <div><a href="#">About</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

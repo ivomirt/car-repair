@@ -1,0 +1,455 @@
+.container {
+  max-width: 1100px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Righteous", cursive;
+}
+
+.btn {
+  padding: 0.7rem;
+  color: #fff;
+  font-size: 1.2rem;
+  background-color: red;
+  display: inline-block;
+  margin-top: 1.5rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.btn:hover {
+  color: red;
+  background-color: #fff;
+}
+
+.text-eff {
+  color: red;
+}
+
+.logo {
+  color: #fff;
+  padding: 0.5rem;
+  width: 40%;
+}
+
+.nav-item {
+  padding: 0.7rem;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.error {
+  color: red;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  background-color: #0d0d0d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+#header {
+  position: relative;
+  height: 100vh;
+}
+
+#header::before {
+  content: "";
+  background: url(../img/car-repair-with-an-interlock-device.jpg) no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+#navbar .navbar-container {
+  font-family: "Righteous", cursive;
+  color: #0d0d0d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#navbar .navbar-container a {
+  color: #fff;
+}
+
+#navbar .navbar-container a:hover {
+  color: red;
+}
+
+#showcase {
+  margin-top: 15%;
+}
+
+#showcase .showcase-container .showcase-item {
+  padding: 0.7rem;
+}
+
+#showcase .showcase-container .showcase-item h1 {
+  color: #ffea00;
+  font-size: 8rem;
+}
+
+#showcase .showcase-container .showcase-item h2 {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+#showcase .showcase-container .showcase-item p {
+  font-size: 1.5rem;
+}
+
+#form-section {
+  color: #fff;
+  height: 100%;
+  background-color: #333;
+  text-align: center;
+}
+
+#form-section h1 {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+#form-section .form-container {
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#form-section .form-container .form-item {
+  padding: 1rem;
+}
+
+#form-section .form-container .form-item .inner-form-item {
+  position: relative;
+  padding: 0.7rem;
+}
+
+#form-section .form-container .form-item .inner-form-item input {
+  text-align: center;
+  padding: 0.5rem;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  font-size: 1rem;
+}
+
+#form-section .form-container .form-item .inner-form-item small {
+  position: absolute;
+  left: 10px;
+  top: 50px;
+}
+
+#form-section .form-container .form-item .inner-form-item p {
+  margin-top: 2rem;
+}
+
+#form-section button {
+  border: none;
+  margin-bottom: 3rem;
+}
+
+#footer .footer-container {
+  color: #fff;
+  text-align: center;
+}
+
+#footer .footer-container .footer-item {
+  padding: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer .footer-container .footer-item a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.7rem;
+}
+
+#footer .footer-container .footer-item a:hover {
+  color: #ffea00;
+}
+
+@media (max-width: 1280px) {
+  #header {
+    height: 100%;
+  }
+  #navbar {
+    font-size: 1.3rem;
+  }
+  #showcase {
+    margin-top: 13%;
+  }
+  #showcase .showcase-container .showcase-item h1 {
+    font-size: 5.5rem;
+  }
+  #showcase .showcase-container .showcase-item h2 {
+    font-size: 4rem;
+  }
+  #showcase .showcase-container .showcase-item p {
+    font-size: 1.6rem;
+  }
+  #showcase .showcase-container .showcase-item .btn {
+    margin-top: 1rem;
+  }
+  #form-section h1 {
+    font-size: 1.5rem;
+  }
+  #form-section .form-container {
+    font-size: 1rem;
+  }
+  #form-section .btn {
+    font-size: 1.2rem;
+  }
+  #footer {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #header {
+    height: 100%;
+  }
+  #navbar {
+    font-size: 1rem;
+  }
+  #showcase {
+    margin-top: 4%;
+  }
+  #showcase .showcase-container .showcase-item h1 {
+    font-size: 3.7rem;
+  }
+  #showcase .showcase-container .showcase-item h2 {
+    font-size: 2.7rem;
+  }
+  #showcase .showcase-container .showcase-item p {
+    font-size: 1rem;
+  }
+  #showcase .showcase-container .showcase-item .btn {
+    margin-top: 0.3rem;
+    font-size: 1rem;
+  }
+  #form-section h1 {
+    font-size: 1.3rem;
+  }
+  #form-section .form-container {
+    font-size: 0.8rem;
+  }
+  #form-section .btn {
+    font-size: 1rem;
+  }
+  #footer {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 769px) {
+  #navbar {
+    font-size: 0.9rem;
+  }
+  #header {
+    height: 100%;
+  }
+  #showcase {
+    margin-top: 3%;
+  }
+  #showcase .showcase-container .showcase-item {
+    padding: 0.6rem;
+  }
+  #showcase .showcase-container .showcase-item h1 {
+    font-size: 3.7rem;
+  }
+  #showcase .showcase-container .showcase-item h2 {
+    font-size: 2.7rem;
+  }
+  #showcase .showcase-container .showcase-item p {
+    font-size: 0.9rem;
+  }
+  #showcase .showcase-container .showcase-item .btn {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #navbar {
+    font-size: 0.8rem;
+  }
+  #showcase {
+    margin-top: 4%;
+  }
+  #showcase .showcase-container .showcase-item h1 {
+    font-size: 2.7rem;
+  }
+  #showcase .showcase-container .showcase-item h2 {
+    font-size: 1.7rem;
+  }
+  #showcase .showcase-container .showcase-item p {
+    font-size: 0.8rem;
+  }
+  #showcase .showcase-container .showcase-item .btn {
+    margin-top: 0.3rem;
+    font-size: 0.7rem;
+  }
+  #form-section h1 {
+    font-size: 1.1rem;
+  }
+  #form-section .form-container {
+    font-size: 0.8rem;
+  }
+  #form-section .form-container .form-item .inner-form-item input {
+    font-size: 0.8rem;
+    margin-bottom: 0.9rem;
+  }
+  #form-section .btn {
+    font-size: 0.9rem;
+  }
+  #footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 468px) {
+  #navbar {
+    font-size: 0.8rem;
+  }
+  #navbar .navbar-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  #navbar .navbar-container h2 {
+    display: none;
+  }
+  #navbar .navbar-container .nav-item {
+    padding: 0.3rem;
+  }
+  #showcase {
+    margin-top: 4%;
+  }
+  #showcase .showcase-container {
+    text-align: center;
+  }
+  #showcase .showcase-container .showcase-item h1 {
+    font-size: 2.7rem;
+  }
+  #showcase .showcase-container .showcase-item h2 {
+    font-size: 1.7rem;
+  }
+  #showcase .showcase-container .showcase-item p {
+    font-size: 0.8rem;
+  }
+  #showcase .showcase-container .showcase-item .btn {
+    margin-top: 0.3rem;
+    font-size: 0.7rem;
+  }
+  #form-section h1 {
+    font-size: 1.1rem;
+  }
+  #form-section .form-container {
+    font-size: 0.8rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #form-section .form-container .form-item .inner-form-item input {
+    font-size: 0.8rem;
+    margin-bottom: 0.9rem;
+  }
+  #form-section .btn {
+    font-size: 0.9rem;
+  }
+  #footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 330px) {
+  #navbar {
+    font-size: 0.7rem;
+  }
+  #navbar .navbar-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  #navbar .navbar-container h2 {
+    display: none;
+  }
+  #navbar .navbar-container .nav-item {
+    padding: 0.3rem;
+  }
+  #showcase {
+    margin-top: 4%;
+  }
+  #showcase .showcase-container {
+    text-align: center;
+  }
+  #showcase .showcase-container .showcase-item {
+    padding: 0.5rem;
+  }
+  #showcase .showcase-container .showcase-item h1 {
+    font-size: 2.6rem;
+  }
+  #showcase .showcase-container .showcase-item h2 {
+    font-size: 1.6rem;
+  }
+  #showcase .showcase-container .showcase-item p {
+    font-size: 0.7rem;
+  }
+  #showcase .showcase-container .showcase-item .btn {
+    margin-top: 0.3rem;
+    font-size: 0.6rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

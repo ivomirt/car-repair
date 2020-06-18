@@ -1,0 +1,147 @@
+@import "config";
+@import "utilities";
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  background-color: $background-color;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+p {
+  color: $main-color;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+// NAVBAR
+#header {
+  position: relative;
+  height: 100vh;
+  &::before {
+    content: "";
+    background: url(../img/car-repair-with-an-interlock-device.jpg) no-repeat
+      center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.3;
+  }
+}
+#navbar {
+  .navbar-container {
+    font-family: "Righteous", cursive;
+
+    color: $background-color;
+    display: flex;
+    justify-content: space-evenly;
+    a {
+      color: $main-color;
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+// Header Showcase
+#showcase {
+  margin-top: 15%;
+  .showcase-container {
+    .showcase-item {
+      padding: 0.7rem;
+      h1 {
+        color: $third-color;
+        font-size: 8rem;
+      }
+      h2 {
+        color: $main-color;
+        font-size: 5rem;
+        font-weight: 300;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+// Form Section
+#form-section {
+  color: $main-color;
+  height: 100%;
+  background-color: #333;
+  text-align: center;
+
+  h1 {
+    padding-top: 1rem;
+    text-align: center;
+  }
+  .form-container {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+
+    .form-item {
+      padding: 1rem;
+      .inner-form-item {
+        position: relative;
+        padding: 0.7rem;
+        input {
+          text-align: center;
+          padding: 0.5rem;
+          width: 100%;
+          background-color: #333;
+          color: $main-color;
+          border: none;
+          border-bottom: 1px solid $main-color;
+          outline: none;
+          font-size: 1rem;
+        }
+        small {
+          position: absolute;
+          //visibility: hidden;
+          left: 10px;
+          top: 50px;
+        }
+        p {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+  button {
+    border: none;
+    margin-bottom: 3rem;
+  }
+}
+
+// FOOTER
+
+#footer {
+  .footer-container {
+    color: $main-color;
+    text-align: center;
+    .footer-item {
+      padding: 0.7rem;
+      display: flex;
+      justify-content: center;
+      a {
+        text-decoration: none;
+        color: $main-color;
+        padding: 0.7rem;
+        &:hover {
+          color: $third-color;
+        }
+      }
+    }
+  }
+}
+
+@import "media";
